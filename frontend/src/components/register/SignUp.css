@@ -1,0 +1,126 @@
+/* SignUp.css */
+
+.signup-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+  margin: 15px;
+  min-height: 500px;
+}
+
+
+
+.signUp-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signUp-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.signup-form {
+  flex: 1;
+  max-width: 400px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.signup-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1997fc;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.signup-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group-Signup {
+  margin-bottom: 15px;
+}
+
+.input-group-Signup input,
+.input-group-Signup select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.input-group-Signup select {
+  appearance: none;
+  background-color: #fff;
+}
+
+.input-group-Signup input:focus,
+.input-group-Signup select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.signup-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup-footer p {
+  margin: 0;
+  color: #666;
+}
+
+.signup-footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-footer a:hover {
+  text-decoration: underline;
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  max-width: 360px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.signup-btn:hover {
+  background-color: #06468b;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup-container {
+    padding: 10px;
+  }
+
+  .signUp-image {
+    display: none;
+  }
+
+  .signup-form {
+    max-width: 100%;
+  }
+}

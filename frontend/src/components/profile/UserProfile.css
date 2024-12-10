@@ -1,0 +1,279 @@
+/* ProfileCard.css */
+
+/* Profile Card Container */
+.profile-card {
+  width: 100%;
+  min-height: 460px;
+  margin: 50px auto; /* Add margin */
+  padding-top: 15px; /* Add padding */
+  background-color: rgba(255, 255, 255, 1);
+  background: #fff;
+  border-radius: 12px;
+  max-width: 700px;
+  position: relative;
+}
+
+.profile-card-byAdmin{
+  width: 1100px;
+  min-height: 450px;
+  margin: 50px auto; /* Add margin */
+  padding-top: 15px; /* Add padding */
+  background-color: rgba(255, 255, 255, 1);
+  background: #fff;
+  border-radius: 12px;
+  position: relative;
+}
+
+/* Profile Card Content */
+.profile-card__cnt {
+  display: grid;
+  margin-top: 20px; /* Adjust margin-top */
+  text-align:start;
+  padding: 20px; /* Adjust padding */
+  transition: all .3s;
+  justify-content: center;
+}
+
+.profile-card__box {
+  padding: 20px;
+}
+
+.profile-card__container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.profile-card__name {
+  font-weight: 700;
+  font-size: 24px;
+  color: #6944ff;
+  margin-bottom: 15px;
+}
+
+.profile-card__txt {
+  padding: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #324e63;
+  margin-bottom: 15px;
+}
+
+.profile-card-ctr{
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  padding-bottom: 20px;
+
+}
+
+/* Profile Card Image */
+.profile-card__img {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto 0; /* Add margin and remove margin-top */
+  border-radius: 50%;
+  overflow: hidden;
+  }
+
+/* Profile Card Info */
+.profile-card-inf {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 35px;
+}
+
+/* Message Form */
+.profile-card-message {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 130px;
+  padding-bottom: 100px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .3s;
+}
+
+.loan-details-admin-heading {
+  text-align: center;
+  margin-top: 25px;
+  color: #333;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.profile-card-form {
+  box-shadow: 0 4px 30px rgba(15, 22, 56, 0.35);
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 35px;
+  transform: scale(.8);
+  position: relative;
+  z-index: 3;
+  transition: all .3s;
+}
+
+.profile-card-form__bottom {
+  justify-content: space-between;
+  display: flex;
+}
+
+/* Profile Card Buttons */
+.profile-card__button {
+  background: none;
+  border: none;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  margin: 15px 35px;
+  padding: 15px 40px;
+  min-width: 201px;
+  border-radius: 50px;
+  min-height: 55px;
+  color: #fff;
+  cursor: pointer;
+  backface-visibility: hidden;
+  transition: all .3s;
+}
+
+.profile-card__buttonByAdmin{
+  background: none;
+  border: none;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 35px 15px;
+  padding: 8px 20px;
+  min-width: 300px;
+  border-radius: 12px;
+  min-height: 55px;
+  color: #fff;
+  cursor: pointer;
+  backface-visibility: hidden;
+  transition: all 1.3s;
+}
+
+/* Button Modifications */
+.button--blue {
+  background: linear-gradient(45deg, #1da1f2, #0e71c8);
+  box-shadow: 0px 4px 30px rgba(19, 127, 212, 0.4);
+
+  &:hover {
+    box-shadow: 0px 7px 30px rgba(19, 127, 212, 0.75);
+  }
+}
+
+.button--orange {
+  background: linear-gradient(45deg, #d5135a, #f05924);
+  box-shadow: 0px 4px 30px rgba(223, 45, 70, 0.35);
+
+  &:hover {
+    box-shadow: 0px 7px 30px rgba(223, 45, 70, 0.75);
+  }
+}
+
+.button--gray {
+  box-shadow: none;
+  background: #dcdcdc;
+  color: #142029;
+}
+
+
+/* Loan Profile.css */
+
+/* UserProfile.css */
+/* userProfile-container */
+.loan-history-container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.loan-history-heading {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #1997fc;
+  font-weight: 600;
+}
+
+.loan-history-message {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.loan-history-message p {
+  font-size: 16px;
+  color: #333;
+}
+
+.loan-history-message button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loan-history-message button:hover {
+  background-color: #0056b3;
+}
+
+.loan-history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.loan-history-table th,
+.loan-history-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.loan-history-table th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.loan-history-table td {
+  background-color: #fff;
+}
+
+.view-details-btn,
+.update-details-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.update-details-btn{
+  background-color: #23CE6B;
+}
+.update-details-btn:hover {
+  background-color: #036016;
+}
+
+.view-details-btn:hover
+{
+  background-color: #0056b3;
+}

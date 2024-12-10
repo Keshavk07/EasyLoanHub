@@ -1,0 +1,155 @@
+/* courses.css */
+.home-about {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .courses-card-container {
+    margin-top: 40px;
+  }
+  
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .courses-card-item {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .courses-card-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .courses-card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .courses-card-left {
+    width: 100%;
+  }
+  
+  .courses-card-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .courses-card-right {
+    padding: 20px;
+  }
+  
+  .courses-card-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .courses-card-rate {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .courses-card-rate i {
+    color: #ffc107;
+    margin-right: 5px;
+  }
+  
+  .courses-card-rate label {
+    margin-left: 10px;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .courses-card-details {
+    margin-top: 20px;
+  }
+  
+  .courses-card-teacher {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .teacher-img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .teacher-info {
+    flex-grow: 1;
+  }
+  
+  .teacher-info h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .teacher-info span {
+    font-size: 0.8rem;
+    color: #777;
+  }
+  
+  .outline-btn {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #007bff;
+    background: transparent;
+    color: #007bff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .outline-btn:hover {
+    background: #007bff;
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .courses-card-right {
+      padding: 15px;
+    }
+  
+    .courses-card-title {
+      font-size: 1.2rem;
+    }
+  
+    .courses-card-rate label {
+      font-size: 0.8rem;
+    }
+  
+    .teacher-info h4 {
+      font-size: 0.9rem;
+    }
+  
+    .teacher-info span {
+      font-size: 0.7rem;
+    }
+  
+    .outline-btn {
+      font-size: 0.9rem;
+      padding: 12px;
+    }
+  }
+  
